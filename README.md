@@ -1,4 +1,4 @@
-# 프로젝트 소개
+![스크린샷(76)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/b467f1de-0267-46f8-9777-b81931c22e20)# 프로젝트 소개
 컴퓨터 네트워크 소켓 통신 구현 과제
 
 # 프로젝트 멤버
@@ -535,19 +535,23 @@ if __name__ == "__main__":
 
 잘못된 경로를 입력할 경우, 404 Not Found 응답 코드가 수신됩니다.
 
+
 ![스크린샷(57)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/34c9d7bf-0718-4975-9e5e-a59cb416e061)
 
 제대로 된 경로를 입력했지만, 보안 토큰을 입력하지 않은 경우 401 Unauthorized 응답 코드가 수신됩니다.
 
+
 ![스크린샷(63)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/05f70b90-832a-45c4-92a0-50a4c7b6fc76)
 
 제대로 된 경로와, 정확한 보안 토큰 값을 입력하면 성공적으로 200 OK 응답 코드가 수신됩니다.
+
 
 ![스크린샷(62)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/b6356fd4-18fa-4ca4-ac53-1832abefeea2)
 ![스크린샷(61)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/73d1cd32-4e1f-42e3-82c4-43c32ee71ecb)
 
 
 제대로 된 경로와, 정확한 보안 토큰 값을 입력하여도 서버에 오류가 생기면 5xx 응답 코드들이 수신됩니다.
+
 
 ![스크린샷(60)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/46d9ee4d-b6e1-4147-bc27-157060325d0b)
 ![스크린샷(59)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/9a50cc67-20b7-4497-82ab-14655617f0dc)
@@ -556,5 +560,79 @@ if __name__ == "__main__":
 
 
 ![스크린샷(58)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/f3ec007d-ac6d-4f9c-966f-cfa82eeb5fc8)
+
+Redirect 되더라도, 경로가 잘못 지정되면 404 Not Found 응답 코드가 수신됩니다.
+
+
+# 실행 (Put Method)
+
+![스크린샷(64)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/acff50b2-ddcc-4d8c-8a0a-2ee9edf5c685)
+
+잘못된 경로를 입력할 경우, 404 Not Found 응답 코드가 수신됩니다.
+
+
+![스크린샷(66)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/be8387c8-65c1-46be-9c1f-262db06d4cc7)
+
+제대로 된 경로를 입력했지만, 적절한 본문을 입력하지 않은 경우 400 Bad Request 응답 코드가 수신됩니다.
+
+
+![스크린샷(67)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/04c8f2e1-b3c9-4b4d-a8d0-00d7cf13f2ca)
+
+제대로 된 경로와 적절한 본문을 입력했지만, 보안 토큰을 입력하지 않은 경우 401 Unauthorized 응답 코드가 수신됩니다.
+
+
+![스크린샷(68)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/5c7f96da-5bc3-486a-bd9d-02fd95d2d331)
+
+제대로 된 경로와 적절한 본문, 정확한 보안 토큰 값을 입력하면 성공적으로 200 OK 응답 코드가 수신됩니다.
+
+
+![스크린샷(73)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/9ec30607-355b-41f0-9bf0-fb562d4dd9ec)
+![스크린샷(69)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/a0b8f106-74c7-4792-a6d8-3fb72aac1e6d)
+![스크린샷(72)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/44e5b854-fbfb-4faa-a32a-196011579275)
+
+제대로 된 경로와 적절한 본문, 정확한 보안 토큰 값을 입력하여도 서버에 오류가 생기면 5xx 응답 코드들이 수신됩니다.
+
+
+![스크린샷(71)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/7c9f5606-41e2-4df8-8687-54b3cb3e18e3)
+![스크린샷(70)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/474a8918-77ae-4be9-a2bc-60729389f071)
+
+경우에 따라 새로운 경로로 응답을 Redirect합니다. 이 경우, 새로운 경로를 통해 성공적으로 200 OK 응답 코드가 수신됩니다.
+
+
+![스크린샷(74)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/bd14d1c1-7d10-4644-9352-7fe30deb234b)
+
+Redirect 되더라도, 경로가 잘못 지정되면 404 Not Found 응답 코드가 수신됩니다.
+
+# 실행 (Head Method)
+
+![스크린샷(75)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/8e3c3175-00cb-4461-a202-05b06ed8e19b)
+
+잘못된 경로를 입력할 경우, 404 Not Found 응답 코드가 수신됩니다.
+
+
+![스크린샷(76)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/8c5bd0e1-377b-4ee1-9d4f-57fbc864378b)
+
+제대로 된 경로를 입력했지만, 보안 토큰을 입력하지 않은 경우 401 Unauthorized 응답 코드가 수신됩니다.
+
+
+![스크린샷(79)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/20d7dcae-4f05-4444-93a1-7eaf3bbbeddf)
+
+제대로 된 경로와, 정확한 보안 토큰 값을 입력하면 성공적으로 200 OK 응답 코드가 수신됩니다.
+
+
+![스크린샷(80)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/2d5bfeaa-be93-495e-adf2-fcd400b65231)
+![스크린샷(77)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/3c976a7a-9fdc-4c63-8376-53bf7f3d56a5)
+
+
+제대로 된 경로와, 정확한 보안 토큰 값을 입력하여도 서버에 오류가 생기면 5xx 응답 코드들이 수신됩니다.
+
+
+![스크린샷(78)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/3edb3e71-69ee-4774-b9e0-93833cced3d6)
+![스크린샷(81)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/e2b11ce1-d426-4338-910d-a1c18889d87b)
+
+경우에 따라 새로운 경로로 응답을 Redirect합니다. 이 경우, 새로운 경로를 통해 성공적으로 200 OK 응답 코드가 수신됩니다.
+
+
+![스크린샷(82)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/1777daef-2052-4e6d-95ad-f158cd7a2a1e)
 
 Redirect 되더라도, 경로가 잘못 지정되면 404 Not Found 응답 코드가 수신됩니다.
