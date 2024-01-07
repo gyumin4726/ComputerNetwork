@@ -450,8 +450,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
                     elif server_state == 2: 
                         self.send_response(502) # 502 Bad Gateway 전송
 
-                    else
-
+                    else:
                         # 30% 확률로 리다이렉트 수행  
                         if random.random()<0.3:
 
