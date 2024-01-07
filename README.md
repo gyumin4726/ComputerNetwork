@@ -18,7 +18,7 @@
 
 ·Server에서 상황에 따른 2xx, 3xx, 4xx, 5xx 응답 메시지 Response 구현 
 
-·와이어 샤크로 해당 메서드의 HTTP format  
+·와이어 샤크로 해당 메서드의 HTTP format 캡쳐
 
 # 소스 파일 설명 (Client)
 ```
