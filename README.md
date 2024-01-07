@@ -529,3 +529,9 @@ if __name__ == "__main__":
     start_server()
 ```
 
+# 실행 (Get Method)
+
+![스크린샷(55)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/8299a9ed-486c-45db-bb85-a80715423a65)
+
+잘못된 경로를 입력할 경우, 404 Not Found 응답 코드가 수신됩니다.
+
