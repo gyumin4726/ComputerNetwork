@@ -670,7 +670,7 @@ Redirect 되더라도, 경로가 잘못 지정되면 404 Not Found 응답 코드
 
 ![스크린샷(88)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/4d5524cb-cff8-4740-ba35-2afcde7dd0c5)
 ![스크린샷(90)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/aa52fcbc-94d8-4d7d-8ceb-c47ab3887cbd)
-경우에 따라 새로운 경로로 응답을 Redirect합니다. 이 경우, 새로운 경로를 통해 성공적으로 200 OK 응답 코드가 수신됩니다.
+경우에 따라 새로운 경로로 응답을 Redirect합니다. 이 경우, 새로운 경로를 통해 성공적으로 201 Created 응답 코드가 수신됩니다.
 
 
 ![스크린샷(91)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/88e22a7a-6ec6-4da9-8589-7147a49b5660)
