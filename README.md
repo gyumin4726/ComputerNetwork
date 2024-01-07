@@ -247,13 +247,16 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         if self.path == "www.put.com":
 
             # 요청 헤더에서 'computer-network' 항목 확인
-            content_length = self.headers.get('computer-network')
+            special_header = self.headers.get('computer-network')
 
             # 'computer-network' 항목이 없으면 400 Bad Request 전송
             if special_header is None:
                 self.send_response(400)
 
             else:
+                # 'content_length'를 HTTP 헤더에서 불러들이기
+                content_length = self.headers.get('Content-Length')
+
                 # 'content_length'를 정수로 변환
                 length = int(content_length)
 
@@ -423,6 +426,9 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
                 self.send_response(400)
 
             else:
+                # 'content_length'를 HTTP 헤더에서 불러들이기
+                content_length = self.headers.get('Content-Length')
+
                 # 'content_length'를 정수로 변환
                 length = int(content_length)
 
@@ -431,6 +437,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
                 # 읽은 본문을 디코딩하고, 그 내용이 'right-body'와 일치하는지 확인
                 if body.decode() != 'right-body':
+
                     # 본문 내용이 'right-body'와 일치하지 않으면 400 Bad Request 응답 전
                     self.send_response(400)
 
