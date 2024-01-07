@@ -1,4 +1,4 @@
-![스크린샷(76)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/b467f1de-0267-46f8-9777-b81931c22e20)# 프로젝트 소개
+# 프로젝트 소개
 컴퓨터 네트워크 소켓 통신 구현 과제
 
 # 프로젝트 멤버
@@ -632,7 +632,42 @@ Redirect 되더라도, 경로가 잘못 지정되면 404 Not Found 응답 코드
 
 경우에 따라 새로운 경로로 응답을 Redirect합니다. 이 경우, 새로운 경로를 통해 성공적으로 200 OK 응답 코드가 수신됩니다.
 
-
 ![스크린샷(82)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/1777daef-2052-4e6d-95ad-f158cd7a2a1e)
+
+Redirect 되더라도, 경로가 잘못 지정되면 404 Not Found 응답 코드가 수신됩니다.
+
+# 실행 (Post Method)
+
+![스크린샷(83)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/49bcb234-7af1-462d-b5e3-b142ed3030b2)
+
+잘못된 경로를 입력할 경우, 404 Not Found 응답 코드가 수신됩니다.
+
+
+![스크린샷(84)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/22baeaab-68d9-4087-b085-412a1d9100f9)
+제대로 된 경로를 입력했지만, 적절한 본문을 입력하지 않은 경우 400 Bad Request 응답 코드가 수신됩니다.
+
+
+![스크린샷(85)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/ef8902ad-1bbd-48ff-a917-ee4224ab50ad)
+
+제대로 된 경로와 적절한 본문을 입력했지만, 보안 토큰을 입력하지 않은 경우 401 Unauthorized 응답 코드가 수신됩니다.
+
+
+![스크린샷(86)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/79877080-7082-4826-b5a5-062af728b4d1)
+
+제대로 된 경로와 적절한 본문, 정확한 보안 토큰 값을 입력하면 성공적으로 201 Created 응답 코드가 수신됩니다.
+
+
+![스크린샷(89)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/bc4b9428-809c-442a-a5b5-2d90b95381a8)
+![스크린샷(87)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/1f23d7a7-80e9-4116-aff0-98c615e3cd80)
+
+제대로 된 경로와 적절한 본문, 정확한 보안 토큰 값을 입력하여도 서버에 오류가 생기면 5xx 응답 코드들이 수신됩니다.
+
+
+![스크린샷(88)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/4d5524cb-cff8-4740-ba35-2afcde7dd0c5)
+![스크린샷(90)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/aa52fcbc-94d8-4d7d-8ceb-c47ab3887cbd)
+경우에 따라 새로운 경로로 응답을 Redirect합니다. 이 경우, 새로운 경로를 통해 성공적으로 200 OK 응답 코드가 수신됩니다.
+
+
+![스크린샷(91)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/88e22a7a-6ec6-4da9-8589-7147a49b5660)
 
 Redirect 되더라도, 경로가 잘못 지정되면 404 Not Found 응답 코드가 수신됩니다.
