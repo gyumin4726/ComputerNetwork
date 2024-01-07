@@ -502,14 +502,24 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.send_response(404) 
         self.end_headers()
 ```
-
-
+```
+# 서버를 실행는 메서드
 def start_server():
-    server_address = ('localhost', 8088)  # 서버 주소와 포트 설정
+
+    # 서버가 동작할 주소와 포트를 'localhost' 주소의 8088 포트로 설정
+    server_address = ('localhost', 8088)
+
+    # HTTPServer 객체를 생성, 요청을 처리할 핸들러로 'SimpleHTTPRequestHandler'를 사용
     httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
+
+    # 서버가 실행됨을 알리는 메시지를 출력
     print(f"Starting server on {server_address[0]}:{server_address[1]}")
+
+    # 서버를 실행하고, 클라이언트로부터의 요청을 무한히 대기하며, 요청이 들어오면 처리
     httpd.serve_forever()
 
+#'start_server' 함수를 호출하여 서버를 시작
 if __name__ == "__main__":
     start_server()
+```
 
