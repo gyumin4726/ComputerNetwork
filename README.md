@@ -535,3 +535,26 @@ if __name__ == "__main__":
 
 잘못된 경로를 입력할 경우, 404 Not Found 응답 코드가 수신됩니다.
 
+![스크린샷(57)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/34c9d7bf-0718-4975-9e5e-a59cb416e061)
+
+제대로 된 경로를 입력했지만, 보안 토큰을 입력하지 않은 경우 401 Unauthorized 응답 코드가 수신됩니다.
+
+![스크린샷(63)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/05f70b90-832a-45c4-92a0-50a4c7b6fc76)
+
+제대로 된 경로와, 정확한 보안 토큰 값을 입력하면 성공적으로 200 OK 응답 코드가 수신됩니다.
+
+![스크린샷(62)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/b6356fd4-18fa-4ca4-ac53-1832abefeea2)
+![스크린샷(61)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/73d1cd32-4e1f-42e3-82c4-43c32ee71ecb)
+
+
+제대로 된 경로와, 정확한 보안 토큰 값을 입력하여도 서버에 오류가 생기면 5xx 응답 코드들이 수신됩니다.
+
+![스크린샷(60)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/46d9ee4d-b6e1-4147-bc27-157060325d0b)
+![스크린샷(59)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/9a50cc67-20b7-4497-82ab-14655617f0dc)
+
+경우에 따라 새로운 경로로 응답을 Redirect합니다. 이 경우, 새로운 경로를 통해 성공적으로 200 OK 응답 코드가 수신됩니다.
+
+
+![스크린샷(58)](https://github.com/RYUCHOHEE/ComputerNetwork/assets/155864402/f3ec007d-ac6d-4f9c-966f-cfa82eeb5fc8)
+
+Redirect 되더라도, 경로가 잘못 지정되면 404 Not Found 응답 코드가 수신됩니다.
