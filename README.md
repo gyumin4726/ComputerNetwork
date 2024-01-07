@@ -6,14 +6,19 @@
 
 # 개발 환경
 ·Windows 11
-·Python 3.12 (64-bit)
-·IDLE (Python 3.12 64-bit)
-·PC 1대를 이용한 localhost(127.0.0.1) 루프백
+
+·Python 3.12 (64-bit) 
+
+·IDLE (Python 3.12 64-bit) 
+
+·PC 1대를 이용한 localhost(127.0.0.1) 루프백 
 
 # 개발 목표
 ·Client에서 GET/HEAD/POST/PUT Request 구현
-·Server에서 상황에 따른 2xx, 3xx, 4xx, 5xx 응답 메시지 Response 구현
-·와이어 샤크로 해당 메서드의 HTTP format 
+
+·Server에서 상황에 따른 2xx, 3xx, 4xx, 5xx 응답 메시지 Response 구현 
+
+·와이어 샤크로 해당 메서드의 HTTP format  
 
 # 소스 파일 설명 (Client)
 ```
